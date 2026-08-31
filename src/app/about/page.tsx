@@ -41,8 +41,9 @@ export default function AboutPage() {
           <Reveal as="div">
             <h2 className="about-sub">How I got here</h2>
             <p>
-              Business degree from Idaho, Spanish minor, four years of football
-              in the middle of it. Then sales: cold outbound at a training
+              International Business degree from Idaho, Spanish minor, four years
+              of football in the middle of it. Then sales: cold outbound at a
+              training
               company, and revenue operations for a fitness brand where I built
               the CRM, the funnels, and the automations myself. That&apos;s where
               the web work started. I kept needing pages and systems built, so I

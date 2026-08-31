@@ -85,7 +85,7 @@ export const commits: Commit[] = [
   },
   {
     hash: "b7c14e6",
-    title: "B.S., International Business & Spanish",
+    title: "B.S., International Business",
     branch: "main",
     org: "University of Idaho",
     detail: "Business degree, Spanish minor.",
