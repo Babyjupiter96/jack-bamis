@@ -1283,6 +1283,69 @@ hr.rule {
   gap: 8px;
 }
 
+/* ---- Build steps (the backdrop section) ---- */
+
+.build-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+  display: grid;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+
+.build-steps > li {
+  counter-increment: step;
+  background: var(--ground);
+  padding: clamp(22px, 3.5vw, 32px);
+}
+
+.build-steps > li h3 {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.build-steps > li h3::before {
+  content: counter(step, decimal-leading-zero) " · ";
+  color: var(--muted);
+}
+
+.build-steps > li p {
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  max-width: 64ch;
+  margin: 0;
+}
+
+.build-steps code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.86em;
+  color: var(--steel);
+}
+
+.code-block {
+  margin: 16px 0 0;
+  padding: 16px 18px;
+  background: var(--panel-2);
+  border: 1px solid var(--rule);
+  overflow-x: auto;
+}
+
+.code-block code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  white-space: pre;
+}
+
 /* ---- Contact ---- */
 
 .contact-band {

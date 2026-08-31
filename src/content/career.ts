@@ -84,6 +84,15 @@ export const commits: Commit[] = [
     date: "Apr 2021 — Jul 2025",
   },
   {
+    hash: "c3e7f92",
+    title: "Personal trainer & football coach",
+    branch: "athletics",
+    org: "Independent · 7-on-7 on weekends",
+    detail:
+      "Trained clients and coached through the years I was teaching myself to build. It paid for the hours.",
+    date: "2021 — 2025",
+  },
+  {
     hash: "b7c14e6",
     title: "B.S., International Business",
     branch: "main",
