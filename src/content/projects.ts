@@ -92,7 +92,7 @@ export const projects: Project[] = [
       "Serves as the front door for real client engagements.",
     ],
     image: "/work/forge-digital.jpg",
-    imageReady: false,
+    imageReady: true,
     // Screen recordings. Drop the files in /public/media and flip `ready` via
     // renaming — see README. Set ratio to 9/16 for a phone-screen recording.
     mediaReady: false,
@@ -125,7 +125,7 @@ export const projects: Project[] = [
       "Copywriting",
       "Accessibility & mobile-first layout",
     ],
-    liveUrl: "https://babyjupiter96.github.io/coeur-damour",
+    liveUrl: "https://coeurdamourcare.com",
     liveConfirmed: true,
     stack: ["HTML", "CSS", "Vanilla JS", "GitHub Pages", "Custom domain"],
     summary:
@@ -162,7 +162,7 @@ export const projects: Project[] = [
       "A clear contact path for families and referral sources.",
     ],
     image: "/work/coeur-damour.jpg",
-    imageReady: false,
+    imageReady: true,
   },
   {
     slug: "aphani-solutions",
@@ -176,9 +176,8 @@ export const projects: Project[] = [
       "Copywriting",
       "Deployment",
     ],
-    // TODO: confirm the live URL with Cameron and set liveConfirmed to true.
     liveUrl: "https://aphanisolutions.com",
-    liveConfirmed: false,
+    liveConfirmed: true,
     stack: ["HTML", "CSS", "Vanilla JS", "Node (server component)", "Vercel"],
     summary:
       "A paying client — a sales and revenue consultancy that needed a site matching the caliber of the team behind it. I built the brand system, the full multi-page site, and the copy from scratch.",
@@ -209,7 +208,7 @@ export const projects: Project[] = [
       "Deployed on Vercel with form handling.",
     ],
     image: "/work/aphani-solutions.jpg",
-    imageReady: false,
+    imageReady: true,
   },
 ];
 

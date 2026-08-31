@@ -10,7 +10,7 @@ export const site = {
   // TODO: fill these in.
   links: {
     github: "https://github.com/babyjupiter96",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/jack-bamis-a58927170/",
     resume: "", // e.g. "/jack-bamis-resume.pdf" — drop the PDF in /public
   },
   // Production domain — update before deploy, used for metadata / OG tags.
