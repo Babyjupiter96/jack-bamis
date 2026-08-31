@@ -41,13 +41,12 @@ export default function AboutPage() {
           <Reveal as="div">
             <h2 className="about-sub">How I got here</h2>
             <p>
-              I played Division I football at Idaho — running back and
-              linebacker, with a freshman year jumping in track. Business degree,
-              Spanish minor. Then sales: cold outbound at a training company, and
-              revenue operations for a fitness brand where I built the CRM, the
-              funnels, and the automations myself. That&apos;s where the web work
-              started. I kept needing pages and systems built, so I built them —
-              and then it was the thing I wanted to do.
+              Business degree from Idaho, Spanish minor, four years of football
+              in the middle of it. Then sales: cold outbound at a training
+              company, and revenue operations for a fitness brand where I built
+              the CRM, the funnels, and the automations myself. That&apos;s where
+              the web work started. I kept needing pages and systems built, so I
+              built them — and then it was the thing I wanted to do.
             </p>
 
             <h2 className="about-sub">What I do now</h2>
