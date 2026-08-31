@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { site, skills } from "@/content/site";
 import { Reveal } from "@/components/Reveal";
+import { HeroFilmBackdrop } from "@/components/HeroFilmBackdrop";
 
 export const metadata: Metadata = {
   title: "About",
@@ -13,12 +14,18 @@ export default function AboutPage() {
   return (
     <>
       <section className="hero">
-        <div className="hero__backdrop" aria-hidden="true" />
+        <HeroFilmBackdrop />
         <div className="wrap">
           <span className="eyebrow">About</span>
           <h1 className="about-lede">
             I learn by shipping — real sites, for real businesses.
           </h1>
+          <p className="hero__film-note">
+            {/* TODO: swap in your real sport + level. */}
+            Competed in football before I wrote a line of code. Same habit
+            carried over: watch the film, find what isn&apos;t working, run it
+            back better.
+          </p>
         </div>
       </section>
 
