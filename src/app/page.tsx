@@ -49,6 +49,7 @@ export default function HomePage() {
           <HeroHeadline />
           <Reveal delay={360}>
             <p className="hero__sub">{site.tagline}</p>
+            <p className="hero__note">{site.note}</p>
             <p className="hero__avail">{site.availability}</p>
             <div className="hero__actions">
               <Link href="/work" className="btn">

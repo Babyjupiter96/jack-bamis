@@ -620,6 +620,12 @@ hr.rule {
   margin-bottom: 20px;
 }
 
+.hero__note {
+  font-size: 15px;
+  color: var(--muted);
+  margin: -6px 0 20px;
+}
+
 .hero__avail {
   font-family: var(--font-sans);
   font-size: 12.5px;

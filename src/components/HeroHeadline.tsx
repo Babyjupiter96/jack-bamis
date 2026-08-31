@@ -7,11 +7,11 @@ export function HeroHeadline() {
   return (
     <h1 className="hero__headline">
       <span className="hero__line">
-        <span>I design and</span>
+        <span>Design, build,</span>
       </span>
       <span className="hero__line">
         <span>
-          <span className="sheen">build websites.</span>
+          <span className="sheen">ship.</span>
         </span>
       </span>
     </h1>

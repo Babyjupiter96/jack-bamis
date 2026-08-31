@@ -1,8 +1,11 @@
 export const site = {
   name: "Jack Bamis",
-  role: "Designer & Front-End Developer",
-  // One line under the hero. What you do, plainly — then the human note.
-  tagline: "For small businesses — brand, front end, copy, and the follow-up systems behind them. Self-taught. Four years of Division I football before any of this.",
+  role: "Front-End Developer & Web Designer",
+  // One line under the hero — the positioning statement.
+  tagline:
+    "I design and build production websites and digital experiences — from UX and visual systems to front-end development and AI-powered functionality.",
+  // Short human note under the positioning line, home hero only.
+  note: "Four years of Division I football before any of this.",
   // Availability signal for recruiters. Edit or clear when you land something.
   availability: "Open to junior and contract front-end work.",
   email: "vandalbamis@gmail.com",
