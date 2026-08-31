@@ -1,4 +1,5 @@
 import { site } from "@/content/site";
+import { asset } from "@/lib/base";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -21,7 +22,7 @@ export function Footer() {
             </a>
           )}
           {site.links.resume && (
-            <a href={site.links.resume} target="_blank" rel="noreferrer">
+            <a href={asset(site.links.resume)} target="_blank" rel="noreferrer">
               Résumé
             </a>
           )}

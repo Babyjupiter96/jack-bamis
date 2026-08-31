@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
+import { asset } from "@/lib/base";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -41,7 +42,7 @@ export default function ContactPage() {
             </a>
           )}
           {site.links.resume && (
-            <a href={site.links.resume} target="_blank" rel="noreferrer">
+            <a href={asset(site.links.resume)} target="_blank" rel="noreferrer">
               Résumé (PDF)
             </a>
           )}

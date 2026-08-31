@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { asset } from "@/lib/base";
 
 /**
  * Ambient film-grain video sitting behind a hero, in the spirit of the
@@ -9,7 +10,7 @@ import { useEffect, useRef, useState } from "react";
  * still when the user prefers reduced motion.
  */
 export function HeroFilmBackdrop({
-  poster = "/media/athletics-bg.jpg",
+  poster = asset("/media/athletics-bg.jpg"),
 }: {
   poster?: string;
 }) {
@@ -37,8 +38,8 @@ export function HeroFilmBackdrop({
           playsInline
           preload="auto"
         >
-          <source src="/media/athletics-bg.webm" type="video/webm" />
-          <source src="/media/athletics-bg.mp4" type="video/mp4" />
+          <source src={asset("/media/athletics-bg.webm")} type="video/webm" />
+          <source src={asset("/media/athletics-bg.mp4")} type="video/mp4" />
         </video>
       ) : (
         // eslint-disable-next-line @next/next/no-img-element

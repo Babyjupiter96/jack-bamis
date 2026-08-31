@@ -13,8 +13,8 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/jack-bamis-a58927170/",
     resume: "/jack-bamis-resume.pdf",
   },
-  // Production domain — update before deploy, used for metadata / OG tags.
-  url: "https://jackbamis.com",
+  // Public URL — used for metadata / OG tags. Swap to a custom domain later.
+  url: "https://babyjupiter96.github.io/jack-bamis",
 };
 
 export const skills: { group: string; items: string[] }[] = [
