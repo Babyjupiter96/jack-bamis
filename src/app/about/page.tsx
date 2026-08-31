@@ -21,10 +21,17 @@ export default function AboutPage() {
             I learn by shipping — real sites, for real businesses.
           </h1>
           <p className="hero__film-note">
-            {/* TODO: swap in your real sport + level. */}
-            Competed in football before I wrote a line of code. Same habit
-            carried over: watch the film, find what isn&apos;t working, run it
-            back better.
+            Played{" "}
+            <a
+              href="https://govandals.com/sports/football/roster/jack-bamis/4910"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Division I football at Idaho
+            </a>{" "}
+            &mdash; running back and linebacker &mdash; plus a freshman year in
+            track as a jumper. The habit stuck: watch the film, find what
+            isn&apos;t working, run it back better.
           </p>
         </div>
       </section>
