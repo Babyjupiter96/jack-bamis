@@ -45,8 +45,8 @@ export const projects: Project[] = [
   {
     slug: "forge-digital",
     name: "Forge Digital",
-    tagline: "A web practice that ships the system behind the website — not just the website.",
-    discipline: "Brand · Web · AI Automation",
+    tagline: "My practice. Brand, site, and an AI chat widget that starts the conversation a static page can't.",
+    discipline: "Founder · Brand + Build · AI",
     year: "2025",
     role: [
       "Founder & sole builder",
@@ -59,11 +59,11 @@ export const projects: Project[] = [
     liveConfirmed: true,
     stack: ["HTML", "CSS", "Vanilla JS", "Spline (3D hero)", "LLM API", "GitHub Pages", "Custom domain"],
     summary:
-      "Forge Digital is my own web design practice. I designed the brand, built the marketing site by hand, and built a custom AI chat widget that answers questions, qualifies leads, and moves people toward booking a call — deployed and live.",
+      "My own practice. I designed the brand, built the site by hand, and built a custom AI chat widget wired to an LLM — it answers questions, qualifies leads, and books calls. The widget is the point: a static site tells you about a business; this one starts the conversation.",
     context:
-      "I wanted a real vehicle for client work with a point of view, not a freelancer profile. Forge is that: a small practice built around one idea — a website is only the front of a revenue system, and most service businesses are missing the rest.",
+      "I wanted a real vehicle for client work with a point of view, not a freelancer profile. One idea: a website is the front of a system, and most small businesses are missing the rest of it.",
     problem:
-      "The site had to do two jobs at once: read as a credible studio a business would hand a project to, and prove the automation claim rather than just assert it. A static brochure site would have undercut the pitch.",
+      "Two jobs at once — read as a studio a business would hand a project to, and prove the automation claim instead of asserting it. A static brochure site undercuts that pitch by existing.",
     work: [
       {
         title: "Built the brand system",
@@ -116,8 +116,8 @@ export const projects: Project[] = [
   {
     slug: "coeur-damour",
     name: "Coeur d'Amour Caregiver Services",
-    tagline: "A brand and site from zero for a new in-home caregiving business.",
-    discipline: "Brand Kit · Website · Copy",
+    tagline: "Brand and six pages from nothing. In-home care is a trust decision — the site had to feel like one.",
+    discipline: "Client · Brand Kit · Build",
     year: "2025",
     role: [
       "Brand kit (logo direction, palette, type)",
@@ -129,11 +129,11 @@ export const projects: Project[] = [
     liveConfirmed: true,
     stack: ["HTML", "CSS", "Vanilla JS", "GitHub Pages", "Custom domain"],
     summary:
-      "A brand-new caregiving business with no logo, no site, and no way for families to find it. I built the brand kit and a six-page site from the ground up, wrote every line of copy, and made the whole thing warm, calm, and easy to read on a phone.",
+      "A new caregiving business with no logo and no site. I built the brand kit and six pages from nothing, wrote every line of copy, and made it read warm on a phone. In-home care is a trust decision, usually made under stress — the site had to feel like one, not like a clinic.",
     context:
-      "The business was starting from nothing — word of mouth only. Families researching in-home care had no page to land on and nothing to vet.",
+      "Starting from zero — word of mouth only. Families researching in-home care had no page to land on and nothing to vet.",
     problem:
-      "In-home care is a trust decision, often made under stress. The site had to feel reassuring rather than clinical, load fast on any device, and make the contact path obvious for a caregiver or family member who is not tech-comfortable.",
+      "It had to feel reassuring, not clinical. Load fast on any phone. And make the contact path obvious for someone who isn't tech-comfortable and is already worried.",
     work: [
       {
         title: "Built the brand kit",
@@ -167,8 +167,8 @@ export const projects: Project[] = [
   {
     slug: "aphani-solutions",
     name: "Aphani Solutions",
-    tagline: "A brand system and full site for a sales and revenue consultancy.",
-    discipline: "Brand System · Full Build · Copy",
+    tagline: "Brand system and full site for a sales consultancy. It had to carry the authority the team already has in the room.",
+    discipline: "Client · Brand System · Build",
     year: "2025",
     role: [
       "Brand system from scratch",
@@ -180,11 +180,11 @@ export const projects: Project[] = [
     liveConfirmed: true,
     stack: ["HTML", "CSS", "Vanilla JS", "Node (server component)", "Vercel"],
     summary:
-      "A paying client — a sales and revenue consultancy that needed a site matching the caliber of the team behind it. I built the brand system, the full multi-page site, and the copy from scratch.",
+      "Paid client. A sales and revenue consultancy closing serious deals with a web presence that didn't say so. I built the brand system, the full site, and the copy from scratch — the site had to carry the same authority the team does in the room.",
     context:
-      "The team was closing serious work, but the web presence did not reflect that. Prospects who looked them up found nothing that signaled the same level.",
+      "The team was closing serious work. A prospect who looked them up found nothing that signaled the same level.",
     problem:
-      "The site had to carry authority immediately — a prospect referred to the firm should land on it and feel they are dealing with people who operate at their level, not a template.",
+      "Authority on landing. A referred prospect should feel they're dealing with people who operate at their level — not a template.",
     work: [
       {
         title: "Designed the brand system",

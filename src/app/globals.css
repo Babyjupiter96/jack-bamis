@@ -136,6 +136,13 @@ hr.rule {
   margin-bottom: clamp(28px, 5vw, 52px);
 }
 
+.section-intro {
+  max-width: 52ch;
+  margin: -12px 0 clamp(28px, 5vw, 48px);
+  color: var(--ink-soft);
+  font-size: 17px;
+}
+
 .section-head .num {
   font-family: var(--font-display);
   font-weight: 600;
@@ -1017,6 +1024,20 @@ hr.rule {
 
 .about-cols p {
   color: var(--ink-soft);
+}
+
+.about-sub {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 32px 0 12px;
+}
+
+.about-cols > * > .about-sub:first-child {
+  margin-top: 0;
 }
 
 .skill-group {

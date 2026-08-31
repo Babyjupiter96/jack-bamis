@@ -31,7 +31,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <h3>{project.name}</h3>
       <p>{project.tagline}</p>
       <span className="project-card__link">
-        Read the case study&nbsp;<span aria-hidden="true">&rarr;</span>
+        Case study&nbsp;<span aria-hidden="true">&rarr;</span>
       </span>
     </Link>
   );

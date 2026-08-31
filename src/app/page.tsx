@@ -10,16 +10,16 @@ import { HeroHeadline } from "@/components/HeroHeadline";
 
 const doItems = [
   {
-    title: "Design the brand",
-    body: "Palette, type system, and layout rules that make a small business look like it belongs in the room.",
+    title: "Design",
+    body: "Brand, type, layout. The rules that make a small business look like it belongs.",
   },
   {
-    title: "Build the front end",
-    body: "Hand-coded, responsive, accessible, fast. React and Next.js, or plain HTML/CSS/JS when that's the right call.",
+    title: "Build",
+    body: "Hand-coded. Responsive, accessible, fast. React when the job earns it, plain HTML when it doesn't.",
   },
   {
-    title: "Wire the automation",
-    body: "Forms, follow-up, and AI chat that respond to a lead before it goes cold — connected to the tools the business already uses.",
+    title: "Automate",
+    body: "Forms, follow-up, AI chat. The site keeps working after the visitor leaves.",
   },
 ];
 
@@ -66,7 +66,11 @@ export default function HomePage() {
 
       <section className="section wrap">
         <Reveal>
-          <SectionHead num="01" title="Selected work" />
+          <SectionHead num="01" title="Builds" />
+          <p className="section-intro">
+            Sites I designed and built start to finish. Every one is live — the
+            links go to the real thing, not a case-study mockup.
+          </p>
         </Reveal>
         <div className="work-grid work-grid--two">
           {projects.map((p, i) => (
@@ -100,20 +104,19 @@ export default function HomePage() {
         <Reveal>
           <SectionHead num="03" title="About" />
           <p className="about-lede">
-            I&apos;m a self-taught designer and developer who ships real client
-            work.
+            Self-taught. Everything here is client work.
           </p>
           <p
             style={{
               color: "var(--ink-soft)",
-              maxWidth: "52ch",
+              maxWidth: "54ch",
               marginTop: "20px",
             }}
           >
-            Three live sites, a working AI chat widget in production, and my own
-            web practice — all built end to end. I&apos;m looking for a junior or
-            contract role where I can work alongside senior developers and get
-            sharper faster.
+            I came to the web through sales and revenue operations — I kept
+            needing pages and systems built, so I built them. Now it&apos;s the
+            work. Three sites are live. I want a junior or contract seat on a
+            team with people to learn from.
           </p>
           <Link href="/about" className="btn" style={{ marginTop: "24px" }}>
             More about me
@@ -123,10 +126,10 @@ export default function HomePage() {
 
       <section className="section--tight wrap">
         <Reveal className="contact-band">
-          <h2>Let&apos;s talk.</h2>
+          <h2>Get in touch.</h2>
           <p>
-            Hiring for a junior or contract web role, or need a site built? I&apos;d
-            like to hear about it.
+            Hiring for a junior or contract role, or need a site built? Email is
+            fastest. I answer within a day.
           </p>
           <a href={`mailto:${site.email}`} className="btn btn--accent">
             {site.email}

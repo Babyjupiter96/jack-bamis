@@ -7,7 +7,7 @@ import { HeroFilmBackdrop } from "@/components/HeroFilmBackdrop";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Self-taught web designer and front-end developer in Phoenix, AZ. Three live client sites and a working AI chat widget in production.",
+    "Self-taught designer and front-end developer in Phoenix. Everything on the site is client work. D1 football, then sales, then this.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="wrap">
           <span className="eyebrow">About</span>
           <h1 className="about-lede">
-            I learn by shipping — real sites, for real businesses.
+            Self-taught. Everything here is client work.
           </h1>
           <p className="hero__film-note">
             Played{" "}
@@ -39,32 +39,41 @@ export default function AboutPage() {
       <section className="section wrap">
         <div className="about-cols">
           <Reveal as="div">
+            <h2 className="about-sub">How I got here</h2>
             <p>
-              I'm {site.name}, a web designer and front-end developer based in
-              {" "}
-              {site.location}. I taught myself by taking on client projects and
-              building them all the way to launch — brand, front end, copy, and
-              the automation behind the site.
+              I played Division I football at Idaho — running back and
+              linebacker, with a freshman year jumping in track. Business degree,
+              Spanish minor. Then sales: cold outbound at a training company, and
+              revenue operations for a fitness brand where I built the CRM, the
+              funnels, and the automations myself. That&apos;s where the web work
+              started. I kept needing pages and systems built, so I built them —
+              and then it was the thing I wanted to do.
             </p>
+
+            <h2 className="about-sub">What I do now</h2>
             <p>
-              So far that's three live sites, a working AI chat widget running in
-              production, and my own web practice, Forge Digital. I hand-code
-              most of my work; I reach for React and Next.js when a project
-              earns it, and plain HTML/CSS/JS when it doesn't.
+              Client sites, start to finish. Design in Figma, build by hand,
+              write the copy, wire up the forms and follow-up. Three are live. I
+              reach for React and Next when a project earns it and plain HTML
+              when it doesn&apos;t.
             </p>
+
+            <h2 className="about-sub">What I want</h2>
             <p>
-              I'm looking for a junior or contract role now. Working solo has
-              taken me a long way, but I want code review, a real PR workflow,
-              and senior developers to learn from. I pick things up fast and I
-              like the parts of the job other people find tedious — the
-              accessibility pass, the responsive edge cases, the performance
-              budget.
+              A junior or contract seat on a team with people to learn from —
+              code review, a real PR workflow, someone senior catching my
+              mistakes before a client does. Working solo has a ceiling and
+              I&apos;ve found it. I pick things up fast and I don&apos;t mind the
+              tedious parts: the accessibility pass, the responsive edge cases,
+              the performance budget.
             </p>
+
+            <h2 className="about-sub">Off the clock</h2>
             <p>
-              Outside of client work I'm usually rebuilding something of mine to
-              try a new tool, or reading through other people's source to see how
-              they solved a problem.
+              Rebuilding something of mine to try a new tool, or reading other
+              people&apos;s source to see how they solved a problem.
             </p>
+
             <Link href="/contact" className="btn" style={{ marginTop: "12px" }}>
               Get in touch
             </Link>

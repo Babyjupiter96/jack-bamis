@@ -12,10 +12,10 @@ export default function ContactPage() {
       <div className="hero__backdrop" aria-hidden="true" />
       <div className="wrap">
         <span className="eyebrow">Contact</span>
-        <h1>Tell me what you're working on.</h1>
+        <h1>Tell me what you&apos;re building.</h1>
         <p className="hero__sub">
-          Hiring for a junior or contract web role, or need a site built? Email
-          is the fastest way to reach me — I reply within a day.
+          Hiring for a junior or contract role, or need a site built? Email is
+          fastest. I answer within a day.
         </p>
 
         <p style={{ marginTop: "32px" }}>

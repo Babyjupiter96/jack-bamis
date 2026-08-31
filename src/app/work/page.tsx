@@ -5,9 +5,9 @@ import { ContactCard } from "@/components/ContactCard";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: "Builds",
   description:
-    "Case studies — brand systems, websites, and automation built end to end for service businesses.",
+    "Sites designed and built start to finish. Every one is live — the links go to the real thing.",
 };
 
 export default function WorkPage() {
@@ -16,11 +16,12 @@ export default function WorkPage() {
       <section className="hero">
         <div className="hero__backdrop" aria-hidden="true" />
         <div className="wrap">
-          <span className="eyebrow">Work</span>
-          <h1>Shipped, live, and running today.</h1>
+          <span className="eyebrow">Builds</span>
+          <h1>Everything here is live.</h1>
           <p className="hero__sub">
-            Every project below is a real business. Each case study covers the
-            brief, exactly what I did, the stack, and what shipped.
+            Real businesses, not exercises. Each case study covers the brief,
+            what I did, the stack, and what shipped — and the link goes to the
+            site itself.
           </p>
         </div>
       </section>
