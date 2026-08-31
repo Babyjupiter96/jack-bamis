@@ -32,7 +32,7 @@ export const commits: Commit[] = [
     org: "StormWind Studios",
     detail:
       "IT & cybersecurity training. 178% / 190% / 147% of quarterly goal in FY27; 260% of quota in the first 90 days; Fast Track Program.",
-    date: "2026 — Present",
+    date: "2026",
     place: "Scottsdale, AZ",
   },
   {
