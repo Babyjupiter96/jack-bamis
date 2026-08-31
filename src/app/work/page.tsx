@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { projects } from "@/content/projects";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ContactCard } from "@/components/ContactCard";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
@@ -31,6 +32,9 @@ export default function WorkPage() {
               <ProjectCard project={p} />
             </Reveal>
           ))}
+          <Reveal delay={projects.length * 90}>
+            <ContactCard />
+          </Reveal>
         </div>
       </section>
     </>

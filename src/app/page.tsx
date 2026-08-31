@@ -2,6 +2,7 @@ import Link from "next/link";
 import { site } from "@/content/site";
 import { projects } from "@/content/projects";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ContactCard } from "@/components/ContactCard";
 import { SectionHead } from "@/components/SectionHead";
 import { Reveal } from "@/components/Reveal";
 import { Marquee } from "@/components/Marquee";
@@ -73,6 +74,9 @@ export default function HomePage() {
               <ProjectCard project={p} />
             </Reveal>
           ))}
+          <Reveal delay={projects.length * 90}>
+            <ContactCard />
+          </Reveal>
         </div>
       </section>
 
