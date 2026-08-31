@@ -58,10 +58,11 @@ export default function AboutPage() {
 
             <h2 className="about-sub">What I do now</h2>
             <p>
-              Client sites, start to finish. Design in Figma, build by hand,
-              write the copy, wire up the forms and follow-up. Three are live. I
-              reach for React and Next when a project earns it and plain HTML
-              when it doesn&apos;t.
+              Client sites, start to finish — design in Figma, write the copy,
+              build by hand. The client work is plain HTML, CSS, and JavaScript;
+              this portfolio and my coaching site are Next.js and TypeScript. I
+              use the CMS when the client needs to edit their own content, and
+              plain code when they don&apos;t.
             </p>
 
             <h2 className="about-sub">What I want</h2>

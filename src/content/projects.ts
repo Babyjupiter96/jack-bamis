@@ -190,30 +190,29 @@ export const projects: Project[] = [
   {
     slug: "aphani-solutions",
     name: "Aphani Solutions",
-    tagline: "Brand system and full site for a sales consultancy. It had to carry the authority the team already has in the room.",
-    discipline: "Client · Brand System · Build",
+    tagline: "Brand system, pages, and copy for a sales consultancy. It had to carry the authority the team already has in the room.",
+    discipline: "Client · Brand System · Design",
     year: "2025",
     role: [
       "Brand system from scratch",
-      "Full multi-page site design & build",
+      "Site design & information architecture",
+      "Front-end build (first version, hand-coded)",
       "Copywriting",
-      "Deployment",
     ],
     liveUrl: "https://aphanisolutions.com",
     liveConfirmed: true,
     stack: [
-      "HTML5",
-      "CSS3 (hand-written)",
-      "JavaScript (ES6+)",
-      "Node.js (form handler)",
-      "Serverless function",
-      "Vercel",
-      "SEO metadata",
-      "Git",
+      "Brand system",
+      "Figma",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "WordPress (live site — client-managed)",
+      "Calendly",
       "Custom domain / DNS",
     ],
     summary:
-      "Paid client. A sales and revenue consultancy closing serious deals with a web presence that didn't say so. I built the brand system, the full site, and the copy from scratch — the site had to carry the same authority the team does in the room.",
+      "Paid client. A sales and revenue consultancy closing serious deals with a web presence that didn't say so. I designed the brand, the pages, and the copy, and hand-coded the first version. The live site now runs on WordPress so the team can edit it themselves.",
     context:
       "The team was closing serious work. A prospect who looked them up found nothing that signaled the same level.",
     problem:
@@ -225,9 +224,9 @@ export const projects: Project[] = [
           "Logo direction, a confident and restrained palette, and a typographic system built to feel senior rather than startup.",
       },
       {
-        title: "Built the full site",
+        title: "Designed and built the first version",
         detail:
-          "Home, Services, Results, Partnership, About, and Contact — a multi-page hand-coded build with a small Node server component for form handling, deployed on Vercel.",
+          "Home, Services, Results, Partnership, About, and Contact — hand-coded from the Figma designs. The team later moved it onto WordPress for in-house editing; the brand, structure, and copy carried over.",
       },
       {
         title: "Wrote the copy",
@@ -237,8 +236,8 @@ export const projects: Project[] = [
     ],
     outcome: [
       "Delivered as a paid client engagement.",
-      "Brand system + multi-page site + copy, built end to end.",
-      "Deployed on Vercel with form handling.",
+      "Brand system, IA, page design, and copy — all shipped and still in production.",
+      "Live on WordPress with Calendly booking.",
     ],
     image: "/work/aphani-solutions.jpg",
     imageReady: true,
