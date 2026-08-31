@@ -20,6 +20,11 @@ export function Footer() {
               LinkedIn
             </a>
           )}
+          {site.links.resume && (
+            <a href={site.links.resume} target="_blank" rel="noreferrer">
+              Résumé
+            </a>
+          )}
         </span>
       </div>
     </footer>

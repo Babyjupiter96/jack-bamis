@@ -11,7 +11,7 @@ export const site = {
   links: {
     github: "https://github.com/babyjupiter96",
     linkedin: "https://www.linkedin.com/in/jack-bamis-a58927170/",
-    resume: "", // e.g. "/jack-bamis-resume.pdf" — drop the PDF in /public
+    resume: "/jack-bamis-resume.pdf",
   },
   // Production domain — update before deploy, used for metadata / OG tags.
   url: "https://jackbamis.com",
