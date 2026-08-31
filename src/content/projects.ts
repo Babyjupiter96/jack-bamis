@@ -243,6 +243,62 @@ export const projects: Project[] = [
     image: "/work/aphani-solutions.jpg",
     imageReady: true,
   },
+  {
+    slug: "jack-bamis-coaching",
+    name: "Jack Bamis Coaching",
+    tagline:
+      "A landing page for my own coaching practice. Same design system as this site — different job.",
+    discipline: "Own brand · Landing page · Build",
+    year: "2026",
+    role: [
+      "Positioning & offer",
+      "Landing-page design",
+      "Front-end build (Next.js)",
+      "Copywriting",
+      "Static deploy on GitHub Pages",
+    ],
+    liveUrl: "https://babyjupiter96.github.io/jack-training",
+    liveConfirmed: true,
+    stack: [
+      "Next.js (App Router)",
+      "TypeScript",
+      "React",
+      "Hand-written CSS",
+      "Static export",
+      "GitHub Actions (CI/CD)",
+      "GitHub Pages",
+    ],
+    summary:
+      "A one-page site for my online 1-on-1 coaching — the trainer half of my background, sold like a product. Built on the same design system as the rest of my work: dark editorial, three-typeface, a classical plate behind the hero. Here it's David's Coronation of Napoleon — crown yourself.",
+    context:
+      "I coached and trained clients for years. The offer was real; there was nowhere to send people. I wanted to prove the system flexes — that the language I use for a web practice also carries a personal-training brand without starting from a blank page.",
+    problem:
+      "A coaching landing page lives or dies on the offer being legible in ten seconds: what it is, who it's for, what it costs, how to start. The design couldn't get in the way of that.",
+    work: [
+      {
+        title: "Wrote the offer first",
+        detail:
+          "Hero, a one-line problem statement, a four-step method, the deliverables, credibility, two priced tiers, an application CTA — the order a prospect actually reads in.",
+      },
+      {
+        title: "Reused the design system",
+        detail:
+          "Same tokens, type, sheen accent, and numbered sections as my portfolio and the Forge site. New content, near-zero new CSS — the point of having a system.",
+      },
+      {
+        title: "Built it in Next.js and shipped it static",
+        detail:
+          "App Router, static export, no server. A GitHub Actions workflow builds and deploys to GitHub Pages on every push, same as this site.",
+      },
+    ],
+    outcome: [
+      "Live, with pricing and an application flow.",
+      "Built on the shared design system — proof it flexes past a web-agency voice.",
+      "Ships itself: push to main, GitHub Actions redeploys.",
+    ],
+    image: "/work/jack-training.jpg",
+    imageReady: true,
+  },
 ];
 
 export function getProject(slug: string) {

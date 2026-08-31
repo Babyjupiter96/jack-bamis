@@ -666,6 +666,20 @@ hr.rule {
   flex: 1;
 }
 
+/* Odd trailing card (usually the CTA) spans the row instead of leaving a hole. */
+@media (min-width: 800px) {
+  .work-grid--two > *:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+  .work-grid--two > *:last-child:nth-child(odd) .project-card--cta {
+    align-items: center;
+    text-align: center;
+  }
+  .work-grid--two > *:last-child:nth-child(odd) .project-card--cta h3 {
+    max-width: none;
+  }
+}
+
 .project-card {
   display: flex;
   flex-direction: column;

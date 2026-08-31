@@ -36,6 +36,16 @@ export const commits: Commit[] = [
     place: "Scottsdale, AZ",
   },
   {
+    hash: "d1a4f6b",
+    title: "Shipped Jack Bamis Coaching",
+    branch: "web",
+    org: "My own coaching practice",
+    detail:
+      "A landing page for online 1-on-1 coaching, built on the same design system as everything else. The trainer half of the résumé, sold like a product.",
+    date: "2026",
+    link: "https://babyjupiter96.github.io/jack-training",
+  },
+  {
     hash: "f2e7a10",
     title: "Launched Forge Digital",
     branch: "web",
