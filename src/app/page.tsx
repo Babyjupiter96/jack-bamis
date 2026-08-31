@@ -7,6 +7,7 @@ import { SectionHead } from "@/components/SectionHead";
 import { Reveal } from "@/components/Reveal";
 import { Marquee } from "@/components/Marquee";
 import { HeroHeadline } from "@/components/HeroHeadline";
+import { HeroBackdrop } from "@/components/HeroBackdrop";
 
 const doItems = [
   {
@@ -42,7 +43,7 @@ export default function HomePage() {
   return (
     <>
       <section className="hero">
-        <div className="hero__backdrop" aria-hidden="true" />
+        <HeroBackdrop />
         <div className="wrap">
           <span className="eyebrow">{site.role}</span>
           <HeroHeadline />

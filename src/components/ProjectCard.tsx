@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Project } from "@/content/projects";
+import { asset } from "@/lib/base";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
@@ -11,11 +11,15 @@ export function ProjectCard({ project }: { project: Project }) {
     >
       <div className="project-card__media">
         {project.imageReady ? (
-          <Image
-            src={project.image}
+          // Pre-sized static screenshots — a plain img keeps the basePath
+          // handling in our hands (next/image drops it on static export).
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={asset(project.image)}
             alt={`${project.name} website`}
             width={800}
             height={500}
+            loading="lazy"
           />
         ) : (
           <span className="project-card__media-fallback" aria-hidden="true">

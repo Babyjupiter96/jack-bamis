@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { getProject, projects } from "@/content/projects";
 import { Reveal } from "@/components/Reveal";
 import { VideoFrame } from "@/components/VideoFrame";
+import { asset } from "@/lib/base";
+import { HeroBackdrop } from "@/components/HeroBackdrop";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -35,7 +37,7 @@ export default async function CaseStudyPage({
   return (
     <>
       <section className="case-hero">
-        <div className="hero__backdrop" aria-hidden="true" />
+        <HeroBackdrop />
         <div className="wrap">
           <Link href="/work" className="back">
             &larr; All work
@@ -84,6 +86,15 @@ export default async function CaseStudyPage({
             <p className="lede">{project.summary}</p>
           </Reveal>
 
+          {project.slug === "forge-digital" && (
+            <Reveal as="div">
+              <p className="note">
+                The chat widget in the corner of this site is the one I built for
+                Forge — same script, same backend. Open it.
+              </p>
+            </Reveal>
+          )}
+
           <Reveal as="div">
             <h2>Context</h2>
             <p>{project.context}</p>
@@ -100,14 +111,14 @@ export default async function CaseStudyPage({
                 <figure className="case-media" key={m.src}>
                   {m.type === "video" ? (
                     <VideoFrame
-                      src={m.src}
-                      poster={m.poster}
+                      src={asset(m.src)}
+                      poster={m.poster ? asset(m.poster) : undefined}
                       label={m.caption}
                       ratio={m.ratio}
                     />
                   ) : (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={m.src} alt={m.caption} />
+                    <img src={asset(m.src)} alt={m.caption} />
                   )}
                   <figcaption>{m.caption}</figcaption>
                 </figure>
