@@ -57,7 +57,19 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://weforgedigitalai.com",
     liveConfirmed: true,
-    stack: ["HTML", "CSS", "Vanilla JS", "Spline (3D hero)", "LLM API", "GitHub Pages", "Custom domain"],
+    stack: [
+      "HTML5",
+      "CSS3 (hand-written)",
+      "JavaScript (ES6+)",
+      "React (chat widget)",
+      "LLM API",
+      "Custom script embed",
+      "Spline (3D hero)",
+      "Google Fonts",
+      "Git",
+      "GitHub Pages",
+      "Custom domain / DNS",
+    ],
     summary:
       "My own practice. I designed the brand, built the site by hand, and built a custom AI chat widget wired to an LLM — it answers questions, qualifies leads, and books calls. The widget is the point: a static site tells you about a business; this one starts the conversation.",
     context:
@@ -127,7 +139,18 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://coeurdamourcare.com",
     liveConfirmed: true,
-    stack: ["HTML", "CSS", "Vanilla JS", "GitHub Pages", "Custom domain"],
+    stack: [
+      "HTML5",
+      "CSS3 (hand-written)",
+      "JavaScript (ES6+)",
+      "Responsive / mobile-first",
+      "Semantic markup",
+      "WCAG AA contrast",
+      "Google Fonts",
+      "Git",
+      "GitHub Pages",
+      "Custom domain / DNS",
+    ],
     summary:
       "A new caregiving business with no logo and no site. I built the brand kit and six pages from nothing, wrote every line of copy, and made it read warm on a phone. In-home care is a trust decision, usually made under stress — the site had to feel like one, not like a clinic.",
     context:
@@ -178,7 +201,17 @@ export const projects: Project[] = [
     ],
     liveUrl: "https://aphanisolutions.com",
     liveConfirmed: true,
-    stack: ["HTML", "CSS", "Vanilla JS", "Node (server component)", "Vercel"],
+    stack: [
+      "HTML5",
+      "CSS3 (hand-written)",
+      "JavaScript (ES6+)",
+      "Node.js (form handler)",
+      "Serverless function",
+      "Vercel",
+      "SEO metadata",
+      "Git",
+      "Custom domain / DNS",
+    ],
     summary:
       "Paid client. A sales and revenue consultancy closing serious deals with a web presence that didn't say so. I built the brand system, the full site, and the copy from scratch — the site had to carry the same authority the team does in the room.",
     context:

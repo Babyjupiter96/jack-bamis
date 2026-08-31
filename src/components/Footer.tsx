@@ -28,6 +28,17 @@ export function Footer() {
           )}
         </span>
       </div>
+      <div className="wrap site-footer__colophon">
+        <p>
+          Built with Next.js, TypeScript, and React. Hand-written CSS, no UI
+          library. Static-exported and deployed to GitHub Pages by GitHub
+          Actions on every commit.{" "}
+          <a href={`${site.links.github}/jack-bamis`} target="_blank" rel="noreferrer">
+            Source
+          </a>
+          .
+        </p>
+      </div>
     </footer>
   );
 }

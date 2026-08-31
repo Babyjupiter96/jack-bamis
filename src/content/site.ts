@@ -19,15 +19,75 @@ export const site = {
 
 export const skills: { group: string; items: string[] }[] = [
   {
-    group: "Build",
-    items: ["HTML", "CSS", "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Responsive layout", "Git / GitHub"],
+    group: "Languages & markup",
+    items: ["HTML", "CSS", "JavaScript (ES6+)", "TypeScript", "JSON", "Markdown"],
   },
   {
-    group: "Design",
-    items: ["Brand systems", "Typography", "Layout & hierarchy", "Design tokens", "Figma", "Accessible UI (WCAG)"],
+    group: "Frameworks & libraries",
+    items: [
+      "React",
+      "Next.js (App Router)",
+      "React Server Components",
+      "Node.js",
+    ],
   },
   {
-    group: "Ship",
-    items: ["Vercel", "GitHub Pages", "Custom domains / DNS", "Performance (Lighthouse)", "SEO basics", "LLM API integration"],
+    group: "Styling & UI",
+    items: [
+      "Hand-written CSS",
+      "CSS Grid & Flexbox",
+      "Design tokens",
+      "CSS animation",
+      "Responsive / mobile-first",
+      "Figma",
+      "Accessible UI (WCAG)",
+    ],
+  },
+  {
+    group: "Tooling & deploy",
+    items: [
+      "Git & GitHub",
+      "GitHub Actions (CI/CD)",
+      "Static export / SSG",
+      "Vercel",
+      "GitHub Pages",
+      "Custom domains / DNS",
+      "npm",
+    ],
+  },
+  {
+    group: "AI & integrations",
+    items: [
+      "LLM APIs",
+      "AI chat widgets",
+      "Prompt engineering",
+      "REST APIs",
+      "Webhooks",
+    ],
+  },
+  {
+    group: "Systems & automation",
+    items: [
+      "GoHighLevel",
+      "Zapier",
+      "Supabase",
+      "CRM & marketing automation",
+      "Form handling",
+      "WordPress",
+    ],
+  },
+  {
+    group: "3D & motion",
+    items: ["Spline", "IntersectionObserver scroll animation"],
+  },
+  {
+    group: "Practices",
+    items: [
+      "Semantic HTML",
+      "Performance budgets (Lighthouse)",
+      "SEO",
+      "Cross-browser",
+      "Progressive enhancement",
+    ],
   },
 ];
