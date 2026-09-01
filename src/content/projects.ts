@@ -28,6 +28,11 @@ export type Project = {
   media?: MediaItem[];
   /** Flip to true once the media files are actually in /public. */
   mediaReady?: boolean;
+  /** An interactive Spline scene. Used as the card visual (a moving thumbnail)
+   *  and as the hero of the case study. */
+  heroScene?: { url: string; label: string; caption: string };
+  /** A pipeline diagram, rendered as its own section in the case study. */
+  flow?: { stage: string; note: string }[];
 };
 
 export type MediaItem = {
@@ -100,8 +105,8 @@ export const projects: Project[] = [
     ],
     outcome: [
       "Live at weforgedigitalai.com with a custom domain.",
-      "Working AI chat widget in production — a functional integration, not a mockup.",
-      "Serves as the front door for real client engagements.",
+      "A working AI SDR in production — chat, qualification, deterministic scoring, and a Calendly hand-off. Not a mockup.",
+      "Serves as the front door for real client engagements — and my own testbed for AI and API work.",
     ],
     image: "/work/forge-digital.jpg",
     imageReady: true,
@@ -122,6 +127,96 @@ export const projects: Project[] = [
         poster: "/media/forge-clip-2.jpg",
         caption: "AI chat widget in action",
         ratio: 9 / 16,
+      },
+    ],
+  },
+  {
+    slug: "forge-ai-sdr",
+    name: "Forge AI SDR",
+    tagline:
+      "The AI that answers, qualifies, and books — built into the Forge site and running in production.",
+    discipline: "AI · APIs · Automation",
+    year: "2025",
+    role: [
+      "Conversation & qualification design",
+      "AI chat widget (React)",
+      "LLM + REST API integration",
+      "Deterministic lead scoring",
+      "Booking hand-off",
+    ],
+    liveUrl: "https://weforgedigitalai.com",
+    liveConfirmed: true,
+    stack: [
+      "LLM APIs (OpenAI · Gemini)",
+      "REST APIs",
+      "Tool / function calling",
+      "React",
+      "TypeScript",
+      "Prisma / Postgres",
+      "Calendly integration",
+      "CORS + rate limiting",
+      "Turborepo monorepo",
+      "Vercel",
+    ],
+    summary:
+      "An AI SDR built into the Forge site: a chat widget that greets visitors, answers questions, works through a qualification conversation, and hands qualified leads a booking link. My own build — the robot on the homepage card is the real thing, and it's running in production.",
+    context:
+      "Forge Digital's pitch is that a website is the front of a system, not the whole thing. The AI SDR is the proof — the part that keeps working after the visitor stops reading.",
+    problem:
+      "An LLM is good at conversation and at pulling structured facts out of one. It is not what should decide whether someone is a real lead. The build had to use the model for what it's good at and keep the qualification gate deterministic and auditable.",
+    work: [
+      {
+        title: "AI chat interface",
+        detail:
+          "A React widget — launcher, message thread, typing and error states — bundled to one script other sites drop in with two data attributes. Themed per site from a config endpoint; visitor identity persists in localStorage.",
+      },
+      {
+        title: "LLM + REST API integration",
+        detail:
+          "The widget calls a POST /api/chat endpoint that fronts a swappable AI provider (OpenAI or Gemini) behind one interface. Streaming replies, tool / function calling, capped at four tool rounds per message. Persona and system prompt are per-site config.",
+      },
+      {
+        title: "Lead qualification",
+        detail:
+          "The model calls an update_lead_profile tool to record what it learns — business type, lead sources, monthly volume, budget, timeline, decision-maker, and more. A pure scoring function (no AI) turns that profile into a score and a status: needs info, qualified, or disqualified.",
+      },
+      {
+        title: "Booking hand-off",
+        detail:
+          "Once a lead clears the qualified threshold, the reply carries a Calendly scheduling link with the visitor's name and email pre-filled. Below the threshold it keeps asking questions instead of pushing a call.",
+      },
+      {
+        title: "Backend & data",
+        detail:
+          "A Turborepo monorepo — widget, dashboard, and shared ai / booking / db packages. Every conversation, message, and lead is written to Postgres via Prisma, scoped per organisation. Per-site origin allow-list, CORS locked to the calling site, per-visitor rate limiting. Deployed on Vercel.",
+      },
+    ],
+    outcome: [
+      "Running in production on weforgedigitalai.com — and embedded in the corner of this portfolio, same script, same backend.",
+      "The model handles conversation and structured extraction; a deterministic function owns the qualified / not-qualified decision.",
+      "Qualified leads get a pre-filled Calendly link; everything is logged to a per-org dashboard.",
+    ],
+    image: "/work/forge-digital.jpg",
+    imageReady: false,
+    heroScene: {
+      url: "https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode",
+      label: "The Forge AI SDR — click to open the chat",
+      caption:
+        "The SDR, as it runs on weforgedigitalai.com. Click it to open the same widget docked in the corner of this page.",
+    },
+    flow: [
+      { stage: "Visitor", note: "Lands on the site, opens the chat" },
+      { stage: "AI SDR chat", note: "React widget, embedded with a script tag" },
+      { stage: "LLM", note: "OpenAI / Gemini via a REST endpoint, tool-calling" },
+      {
+        stage: "Lead qualification",
+        note: "Model records profile fields; a deterministic function scores them",
+      },
+      { stage: "Threshold gate", note: "Needs info · qualified · disqualified" },
+      { stage: "Booking", note: "Qualified leads get a pre-filled Calendly link" },
+      {
+        stage: "Dashboard",
+        note: "Conversation + lead saved to Postgres, scoped per org",
       },
     ],
   },

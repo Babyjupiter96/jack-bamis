@@ -51,7 +51,7 @@ export const commits: Commit[] = [
     branch: "web",
     org: "My own practice",
     detail:
-      "Brand, site, and a custom AI SDR chat widget wired to an LLM. The vehicle for client work.",
+      "Brand, site, and a custom AI SDR — React chat widget, LLM over a REST API, deterministic lead scoring, Calendly hand-off. My own build; the front door for client work.",
     date: "2025",
     link: "https://weforgedigitalai.com",
   },

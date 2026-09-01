@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { getProject, projects } from "@/content/projects";
 import { Reveal } from "@/components/Reveal";
 import { VideoFrame } from "@/components/VideoFrame";
+import { Flow } from "@/components/Flow";
+import { SplineScene } from "@/components/SplineScene";
 import { asset } from "@/lib/base";
 import { HeroBackdrop } from "@/components/HeroBackdrop";
 
@@ -86,6 +88,16 @@ export default async function CaseStudyPage({
             <p className="lede">{project.summary}</p>
           </Reveal>
 
+          {project.heroScene && (
+            <Reveal as="figure" className="case-scene">
+              <SplineScene
+                url={project.heroScene.url}
+                label={project.heroScene.label}
+              />
+              <figcaption>{project.heroScene.caption}</figcaption>
+            </Reveal>
+          )}
+
           {project.slug === "forge-digital" && (
             <Reveal as="div">
               <p className="note">
@@ -104,6 +116,13 @@ export default async function CaseStudyPage({
             <h2>The problem</h2>
             <p>{project.problem}</p>
           </Reveal>
+
+          {project.flow && project.flow.length > 0 && (
+            <Reveal as="div">
+              <h2>The flow</h2>
+              <Flow steps={project.flow} />
+            </Reveal>
+          )}
 
           {project.mediaReady && project.media && project.media.length > 0 && (
             <Reveal as="div">

@@ -106,7 +106,7 @@ export default function HomePage() {
         <Reveal>
           <SectionHead num="03" title="About" />
           <p className="about-lede">
-            Self-taught. Everything here is client work.
+            Self-taught. Client work, personal builds, and experiments.
           </p>
           <p
             style={{
@@ -117,8 +117,9 @@ export default function HomePage() {
           >
             I came to the web through sales and revenue operations — I kept
             needing pages and systems built, so I built them. Now it&apos;s the
-            work. Three sites are live. I want a junior or contract seat on a
-            team with people to learn from.
+            work: client sites, my own practice, and the AI SDR system behind it
+            — all live. I want a junior or contract seat on a team with people to
+            learn from.
           </p>
           <Link href="/about" className="btn" style={{ marginTop: "24px" }}>
             More about me

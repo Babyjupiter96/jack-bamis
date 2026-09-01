@@ -8,7 +8,7 @@ import { SectionHead } from "@/components/SectionHead";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Self-taught designer and front-end developer in Phoenix. Everything on the site is client work. D1 football, then sales, then this.",
+    "Self-taught designer and front-end developer in Phoenix. Client work, personal builds, and experiments. D1 football, then sales, then this.",
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="wrap">
           <span className="eyebrow">About</span>
           <h1 className="about-lede">
-            Self-taught. Everything here is client work.
+            Self-taught. Client work, personal builds, and experiments.
           </h1>
           <p className="hero__film-note">
             Played{" "}
@@ -63,6 +63,12 @@ export default function AboutPage() {
               this portfolio and my coaching site are Next.js and TypeScript. I
               use the CMS when the client needs to edit their own content, and
               plain code when they don&apos;t.
+            </p>
+            <p>
+              My own practice, Forge Digital, is where the deeper build lives: a
+              React chat widget wired to an LLM over a REST API, deterministic
+              lead scoring, and a Calendly booking hand-off &mdash; an AI SDR
+              running in production, not a demo.
             </p>
 
             <h2 className="about-sub">What I want</h2>

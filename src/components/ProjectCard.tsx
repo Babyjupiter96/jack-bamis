@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Project } from "@/content/projects";
 import { asset } from "@/lib/base";
+import { SplineScene } from "@/components/SplineScene";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
@@ -10,7 +11,13 @@ export function ProjectCard({ project }: { project: Project }) {
       aria-label={`${project.name} — case study`}
     >
       <div className="project-card__media">
-        {project.imageReady ? (
+        {project.heroScene ? (
+          <SplineScene
+            url={project.heroScene.url}
+            label={project.name}
+            interactive={false}
+          />
+        ) : project.imageReady ? (
           // Pre-sized static screenshots — a plain img keeps the basePath
           // handling in our hands (next/image drops it on static export).
           // eslint-disable-next-line @next/next/no-img-element
