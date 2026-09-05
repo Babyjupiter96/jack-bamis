@@ -8,7 +8,7 @@ import { site } from "@/content/site";
 const links = [
   { href: "/", label: "Home" },
   { href: "/work", label: "Work" },
-  { href: "/career", label: "Career" },
+  { href: "https://babyjupiter96.github.io/jack-training/", label: "Coaching" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -32,17 +32,23 @@ export function Nav() {
           <ul
             className={`site-nav__links${open ? " site-nav__links--open" : ""}`}
           >
-            {links.map((l) => (
-              <li key={l.href}>
-                <Link
-                  href={l.href}
-                  aria-current={isCurrent(l.href) ? "page" : undefined}
-                  onClick={() => setOpen(false)}
-                >
-                  {l.label}
-                </Link>
-              </li>
-            ))}
+            {links.map((l) => {
+              const isExternal = l.href.startsWith("http");
+              return (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    aria-current={!isExternal && isCurrent(l.href) ? "page" : undefined}
+                    onClick={() => setOpen(false)}
+                    {...(isExternal
+                      ? { target: "_blank", rel: "noreferrer" }
+                      : {})}
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
 

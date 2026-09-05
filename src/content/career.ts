@@ -86,11 +86,11 @@ export const commits: Commit[] = [
   },
   {
     hash: "3d81c4f",
-    title: "Co-Founder & Mentor — Provision Mentorship Program",
+    title: "Coach & Mentor — Provision Mentorship Program",
     branch: "athletics",
-    org: "With former NFL and CFL athletes",
+    org: "Alongside former NFL and CFL athletes",
     detail:
-      "Mentored 50+ high-school athletes toward Division I — leadership sessions, recruiting guidance, 7-on-7 coaching.",
+      "Coached and mentored 50+ high-school athletes toward Division I — leadership sessions, recruiting guidance, 7-on-7 coaching.",
     date: "Apr 2021 — Jul 2025",
   },
   {

@@ -3,7 +3,8 @@ import { projects } from "@/content/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ContactCard } from "@/components/ContactCard";
 import { Reveal } from "@/components/Reveal";
-import { HeroBackdrop } from "@/components/HeroBackdrop";
+import { HeroFilmBackdrop } from "@/components/HeroFilmBackdrop";
+import { WorkFlank } from "@/components/WorkFlank";
 
 export const metadata: Metadata = {
   title: "Builds",
@@ -15,7 +16,7 @@ export default function WorkPage() {
   return (
     <>
       <section className="hero">
-        <HeroBackdrop />
+        <HeroFilmBackdrop />
         <div className="wrap">
           <span className="eyebrow">Builds</span>
           <h1>Everything here is live.</h1>
@@ -27,16 +28,19 @@ export default function WorkPage() {
         </div>
       </section>
 
-      <section className="section wrap">
-        <div className="work-grid work-grid--two">
-          {projects.map((p, i) => (
-            <Reveal key={p.slug} delay={i * 90}>
-              <ProjectCard project={p} />
+      <section className="section work-builds">
+        <WorkFlank />
+        <div className="wrap">
+          <div className="work-grid work-grid--two">
+            {projects.map((p, i) => (
+              <Reveal key={p.slug} delay={i * 90}>
+                <ProjectCard project={p} />
+              </Reveal>
+            ))}
+            <Reveal delay={projects.length * 90}>
+              <ContactCard />
             </Reveal>
-          ))}
-          <Reveal delay={projects.length * 90}>
-            <ContactCard />
-          </Reveal>
+          </div>
         </div>
       </section>
     </>
