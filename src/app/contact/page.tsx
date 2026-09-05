@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { asset } from "@/lib/base";
-import { HeroBackdrop } from "@/components/HeroBackdrop";
+import { HeroFilmBackdrop } from "@/components/HeroFilmBackdrop";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="hero">
-      <HeroBackdrop />
+      <HeroFilmBackdrop />
       <div className="wrap">
         <span className="eyebrow">Contact</span>
         <h1>Tell me what you&apos;re building.</h1>

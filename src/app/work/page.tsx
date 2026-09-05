@@ -3,7 +3,7 @@ import { projects } from "@/content/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ContactCard } from "@/components/ContactCard";
 import { Reveal } from "@/components/Reveal";
-import { HeroBackdrop } from "@/components/HeroBackdrop";
+import { HeroFilmBackdrop } from "@/components/HeroFilmBackdrop";
 
 export const metadata: Metadata = {
   title: "Builds",
@@ -15,7 +15,7 @@ export default function WorkPage() {
   return (
     <>
       <section className="hero">
-        <HeroBackdrop />
+        <HeroFilmBackdrop />
         <div className="wrap">
           <span className="eyebrow">Builds</span>
           <h1>Everything here is live.</h1>

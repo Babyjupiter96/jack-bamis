@@ -7,7 +7,7 @@ import { VideoFrame } from "@/components/VideoFrame";
 import { Flow } from "@/components/Flow";
 import { SplineScene } from "@/components/SplineScene";
 import { asset } from "@/lib/base";
-import { HeroBackdrop } from "@/components/HeroBackdrop";
+import { HeroFilmBackdrop } from "@/components/HeroFilmBackdrop";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -39,7 +39,7 @@ export default async function CaseStudyPage({
   return (
     <>
       <section className="case-hero">
-        <HeroBackdrop />
+        <HeroFilmBackdrop />
         <div className="wrap">
           <Link href="/work" className="back">
             &larr; All work

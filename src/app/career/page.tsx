@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { site } from "@/content/site";
 import { commits, branches, languages } from "@/content/career";
 import { Reveal } from "@/components/Reveal";
-import { HeroBackdrop } from "@/components/HeroBackdrop";
+import { HeroFilmBackdrop } from "@/components/HeroFilmBackdrop";
 import { asset } from "@/lib/base";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function CareerPage() {
   return (
     <>
       <section className="hero">
-        <HeroBackdrop />
+        <HeroFilmBackdrop />
         <div className="wrap">
           <span className="eyebrow">Career</span>
           <div className="repo-line">
