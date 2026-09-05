@@ -6,6 +6,7 @@ import { useEffect, useRef, useState, type FC } from "react";
 const SplineViewer = "spline-viewer" as unknown as FC<{
   url?: string;
   "loading-anim-type"?: string;
+  "events-target"?: string;
 }>;
 
 const VIEWER_SRC =
@@ -106,7 +107,13 @@ export function SplineScene({ url, label, interactive = true }: Props) {
       data-interactive={interactive ? "" : undefined}
       {...control}
     >
-      {state === "ready" && <SplineViewer url={url} loading-anim-type="none" />}
+      {state === "ready" && (
+        <SplineViewer
+          url={url}
+          loading-anim-type="none"
+          events-target={interactive ? "global" : undefined}
+        />
+      )}
       {state !== "ready" && (
         <div className="scene__fallback" aria-hidden="true">
           <span className="scene__orb" />

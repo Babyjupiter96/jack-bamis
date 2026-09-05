@@ -3,7 +3,7 @@ export const site = {
   role: "Front-End Developer & Web Designer",
   // One line under the hero — the positioning statement.
   tagline:
-    "I design and build production websites and digital experiences — from UX and visual systems to front-end development and AI-powered functionality.",
+    "I design and build production websites and digital experiences — from UX and visual systems to front-end development and custom integrations.",
   // Short human note under the positioning line, home hero only.
   note: "Four years of Division I football before any of this.",
   // Availability signal for recruiters. Edit or clear when you land something.
