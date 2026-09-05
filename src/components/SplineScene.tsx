@@ -6,6 +6,7 @@ import { useEffect, useRef, useState, type FC } from "react";
 const SplineViewer = "spline-viewer" as unknown as FC<{
   url?: string;
   "loading-anim-type"?: string;
+  "events-target"?: "local" | "global";
 }>;
 
 const VIEWER_SRC =
@@ -106,7 +107,17 @@ export function SplineScene({ url, label, interactive = true }: Props) {
       data-interactive={interactive ? "" : undefined}
       {...control}
     >
-      {state === "ready" && <SplineViewer url={url} loading-anim-type="none" />}
+      {state === "ready" && (
+        <SplineViewer
+          url={url}
+          loading-anim-type="none"
+          // Default is "local" (canvas-only); "global" makes the robot's
+          // look-at track the cursor across the whole page, like it does on
+          // weforgedigitalai.com. Spline listens on window for this, so it
+          // still works under the card's pointer-events: none.
+          events-target="global"
+        />
+      )}
       {state !== "ready" && (
         <div className="scene__fallback" aria-hidden="true">
           <span className="scene__orb" />
