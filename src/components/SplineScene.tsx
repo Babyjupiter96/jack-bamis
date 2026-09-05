@@ -6,7 +6,7 @@ import { useEffect, useRef, useState, type FC } from "react";
 const SplineViewer = "spline-viewer" as unknown as FC<{
   url?: string;
   "loading-anim-type"?: string;
-  "events-target"?: string;
+  "events-target"?: "local" | "global";
 }>;
 
 const VIEWER_SRC =
@@ -111,6 +111,9 @@ export function SplineScene({ url, label, interactive = true }: Props) {
         <SplineViewer
           url={url}
           loading-anim-type="none"
+          // Default is "local" (canvas-only); the hero needs the robot's
+          // look-at to track the cursor across the whole page, like it does
+          // as a full-bleed hero on weforgedigitalai.com.
           events-target={interactive ? "global" : undefined}
         />
       )}
