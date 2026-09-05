@@ -111,10 +111,11 @@ export function SplineScene({ url, label, interactive = true }: Props) {
         <SplineViewer
           url={url}
           loading-anim-type="none"
-          // Default is "local" (canvas-only); the hero needs the robot's
-          // look-at to track the cursor across the whole page, like it does
-          // as a full-bleed hero on weforgedigitalai.com.
-          events-target={interactive ? "global" : undefined}
+          // Default is "local" (canvas-only); "global" makes the robot's
+          // look-at track the cursor across the whole page, like it does on
+          // weforgedigitalai.com. Spline listens on window for this, so it
+          // still works under the card's pointer-events: none.
+          events-target="global"
         />
       )}
       {state !== "ready" && (
